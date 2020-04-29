@@ -3,7 +3,8 @@ from django.db import models
 from django.utils import timezone
 
 class UseDemand(models.Model):
-    name = models.CharField('대표 학생', max_length=10)
+    objects = models.Manager()
+    name = models.CharField('대표 학생', max_length=20)
     place = models.CharField('위치', max_length=15)
     num_people = models.IntegerField(default=1)
     purpose = models.TextField()
@@ -18,3 +19,4 @@ class UseDemand(models.Model):
 
 
 # https://tutorial.djangogirls.org/ko/django_admin/
+# http://tcpschool.com/html/html_intro_basic

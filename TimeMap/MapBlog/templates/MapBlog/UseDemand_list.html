@@ -1,0 +1,16 @@
+{% extends 'MapBlog/base.html' %}
+
+{% block content %}
+    {% for usedemand in usedemands %}
+         <h2><a href="/">Student: {{ usedemand.name }}</a></h2>
+         <div class="usedemand">
+             <div class="date">
+                 <p>( <em><strong>demand_time:</strong></em> {{ usedemand.demand_time }} )</p>
+             </div>
+             <p><em><strong>place:</strong></em> {{ usedemand.place }}</p>
+             <p><em><strong>purpose:</strong></em><br /><br /> {{ usedemand.purpose|linebreaksbr }}</p>
+             <p><em><strong>start_time:</strong></em> {{ usedemand.start_time }}</p>
+             <p><em><strong>finish_time:</strong></em> {{ usedemand.finish_time }}</p>
+     </div>
+{% endfor %}
+{% endblock %}

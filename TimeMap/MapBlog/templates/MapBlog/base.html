@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Kim Seo Hyun's TimeMap</title>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/MapBlog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Kim Seo Hyun's TimeMap</a></h1>
+            
+            <button type="button" class="btn btn-primary" onclick=""></button>
+        </div>
+    
+
+        <div class="usedemand container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

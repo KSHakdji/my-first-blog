@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             name='UseDemand',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=10, verbose_name='대표 학생')),
+                ('name', models.CharField(max_length=20, verbose_name='대표 학생')),
                 ('place', models.CharField(max_length=15, verbose_name='위치')),
                 ('num_people', models.IntegerField(default=1)),
                 ('purpose', models.TextField()),

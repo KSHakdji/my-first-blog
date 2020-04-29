@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'MapBlog', # 장고에서 사용한다고 알려주는 것
+    'TimeMap',
 ]
 
 MIDDLEWARE = [
